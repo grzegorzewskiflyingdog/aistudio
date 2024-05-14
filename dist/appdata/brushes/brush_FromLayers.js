@@ -28,7 +28,7 @@ class brush_FromLayers {
         }
     }
     refresh(globalValues,brushLayers) {
-        this.globalValues=globalValues    
+        this.globalValues=globalValues
         this.brushImages=null
         this.brushLayers=brushLayers
         if (!brushLayers) return
@@ -155,6 +155,8 @@ class brush_FromLayers {
         return canvas.toDataURL();
       }      
     drawBrushImage(context,point) {
+        if (!this.brushImages.length) return;
+
         // check if distance to last drawn one is longer
         if (this.values && parseInt(this.values.distance) && this.lastDrawnPoint) {
           let x1=this.lastDrawnPoint[0]
