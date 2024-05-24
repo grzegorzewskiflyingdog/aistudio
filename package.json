@@ -1,6 +1,6 @@
 {
     "name": "@fds-components/fds-image-editor-canvas",
-    "version": "1.1.11",
+    "version": "1.1.12",
     "scripts": {
         "build": "npm run build:prepare && rollup -c",
         "devdoc": "npm run build:prepare && export SKIP_HTTPSERVER=true && export MAKE_DOC=true && rollup -c -w",
@@ -55,7 +55,7 @@
         "@fds-components/fds-image-editor-text": "^1.0.20",
         "@fds-components/fds-image-transform": "^1.0.12",
         "@fds-components/fds-local-files": "^1.0.15",
-        "@fds-components/fds-pose-editor": "^1.0.39",
+        "@fds-components/fds-pose-editor": "^1.0.40",
         "@fds-components/fds-progress": "^1.0.4",
         "@fds-components/fds-slider": "^1.0.6",
         "@fds-components/fds-tabs": "^1.0.19",
